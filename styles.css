@@ -33,6 +33,15 @@ body {
     align-content: center;
     text-align: center;
 }
+#latim {
+    margin-top: 3rem;
+    color: #8d6c41;
+    opacity: 0.1;
+    transition: opacity 1s;
+}
+#latim:hover {
+    opacity: 1;
+}
 #eae {
     font-family: 'Crimson Text', 'serif';
     color: #9b8466;

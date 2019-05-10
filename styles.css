@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Crimson Text', 'serif';
+    text-decoration: none;
+}
+@font-face {
+    font-family: 'Roman';
+    src: url("AUGUSTUS");
+}
+body {
+    background: url(imgs/backgroundbuddah.png);
+}
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        "content";
+    grid-template-rows: 80vh;
+    margin: 10vh 0 0 0;
+    
+    
+}
+.grid-content {
+    font-weight: normal;
+    grid-area: content;
+    background: rgba(46, 46, 46, 0.78);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    align-content: center;
+    text-align: center;
+}
+#eae {
+    font-family: 'Crimson Text', 'serif';
+    color: #9b8466;
+}
+#shynata {
+    position: fixed;
+    bottom: 0;
+    height: 100px;
+}
+#sther {
+    color: #932929;
+    transform: all 2s;
+}
+#sther2 {
+    color: #9a7c55;
+}
+a {
+    color: #9b8466;
+}
+#socrates {
+    width: 100px;
+    border-radius: 50%;
+    border: 2px solid #9b8466;
+    margin-top: 3rem;
+}
+#utm {
+    font-size: 1rem;
+    color: #622828;
+    font-family: monospace;
+    position: absolute;
+    bottom: 0;
+}
+.button {
+    padding: 0.3rem 1rem 0.3rem 1rem;
+    color: #9b8466;
+    border: 1px solid #9b8466;
+    cursor: pointer;
+    margin: 0.2rem;
+    background-size: 100%;
+    background-image: linear-gradient(#3c3c3c 30%, #393939);
+    z-index: 1;
+    position: relative;
+    display: inline-block;
+    
+}
+.button:before {
+    background-image: linear-gradient(#453737, #523232 30%);
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    transition: opacity 1.0s;
+}
+.button:hover:before {
+    opacity: 1;
+    color: #c89f6b;
+    
+}
+
+@media screen and (max-width: 550px) {
+    .grid-container {
+    grid-template-rows: 100vh;
+    margin: 0;
+ }
+    .grid-content {
+    padding: 4rem;
+ }   
+}
+
+@media screen and (max-width: 400px) {
+    .grid-content {
+        padding: 1rem;
+    }
+    .button {
+        font-size: .7rem;
+    }
+}
